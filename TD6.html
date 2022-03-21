@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: bisque;}
+  .menu{
+      float: left;
+      width: 200px;
+      height: 100px;
+  }
+  .submenu{
+      background-color: blanchedalmond;
+      width: 100%;
+      height: 100%;
+  }
+  .subuton{
+      background-color: beige;
+      float:inherit;   
+      border: none;
+      color: grey;
+}
+.subuton:hover{
+    background-color: darkgray;
+}
+.submenu a{
+     background-color: azure;
+     height: 100%;
+     width:  100%;  
+     text-decoration: none;
+
+    }
+ .submenu a:hover{
+     background-color: darkgray;
+ }   
+  .contenu{
+      display: none;
+          position: absolute;
+          left: 0;
+          width: 100%;
+  }
+.submenu:hover .contenu{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="submenu" style="height: 2cm; width: 5cm;">
+            <button class="subuton">Services</button>
+            <div class="contenu"><a href="" class="lien">strategy</a>
+                <a href="" class="lien">optimisation</a>
+                <a href="" class="lien">ab</a></div>
+        </div>
+        <div class="submenu">
+            <button class="subuton">Publication</button>
+            <div class="contenu"><a href="" class="lien">Test1</a>
+                <a href="" class="lien">testc</a>
+                <a href="" class="lien">testb</a></div>
+        </div>
+        <div class="submenu">
+            <button class="subuton">a propos</button>
+            <div class="contenu"><a href="" class="lien">test a</a>
+                <a href="" class="lien">testest</a>
+                <a href="" class="lien">yupyup</a></div>
+        </div>
+    </div>
+</body>
+</html>
